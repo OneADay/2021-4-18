@@ -34,6 +34,7 @@ export default class P5Renderer implements BaseRenderer{
 
         const sketch = (s) => {
             this.s = s;
+            s.pixelDensity(1);
             s.setup = () => this.setup(s)
             s.draw = () => this.draw(s)
         }
